@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Downloader GO - Información</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static',filename = 'css/main.css')}}" />
+		<link rel="icon" href="{{ url_for('static',filename = 'icon.png')}}">
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="{{ url_for('index')}}">Downloader GO</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('index')}}">Home</a></li>
+							<li><a href="{{ url_for('descargar')}}">Descargar</a></li>
+							<li><a href="{{ url_for('history') }}">Historial</a></li>
+							<li><a href="{{ url_for('contacto')}}">Contactanos</a></li>
+							<li><a href="{{ url_for('logout')}}" class="button">Salir</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Desarrollo</h2>
+					</header>
+					<div class="box">
+                        <h4>
+                            Downloader GO es una aplicacion WEB basada en el descargador multiplataforma <br>
+                            de linea de comandos <a href="https://ytdl-org.github.io/youtube-dl/">youtube-dl</a>.
+                           	<br>
+                           	Se utilizaron <a href="https://pythonhosted.org/pafy/">pafy</a>, y <a href="https://pytube.io/en/latest/">pytube</a> para realizar validaciones de links.
+							<br>Realizado en <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a>.
+                        </h4>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<li>Desarrollado como proyecto final para CS50X</li>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static',filename = 'js/jquery.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/browser.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/util.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/main.js')}}"></script>
+
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DownloaderGO</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static',filename = 'css/main.css')}}" />
+		<link rel="icon" href="{{ url_for('static',filename = 'icon.png')}}">
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="{{ url_for('index')}}">Downloader GO</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('index')}}">Home</a></li>
+							<li><a href="{{ url_for('descargar')}}">Descargar</a></li>
+							<li><a href="{{ url_for('history') }}">Historial</a></li>
+							<li><a href="{{ url_for('contacto')}}">Contactanos</a></li>
+							<li><a href="{{ url_for('logout')}}" class="button">Salir</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>Downloader GO</h2>
+					<p>Descarga desde multiples plataformas, en una sola página.</p>
+					<ul class="actions special">
+						<li><a href="{{ url_for('descargar')}}" class="button primary">Pruébalo</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Descarga tus contenidos favoritos</h2>
+							<p>Utilizamos un sistema sin publicidad y con descargas<br />
+							adaptadas a tus necesidades.</p>
+						</header>
+					</section>
+
+					<section class="box special">
+						<header class="major">
+							<h3>DownloaderGO te permite descargar desde:</h3>
+						</header>
+					</section>
+
+					<section class="box special features">
+						<div class="features-row">
+							<section>
+								<i class="bi bi-youtube fa-4x" style="color:red;!important"></i>
+								<h3>Youtube</h3>
+								<p>Multiples calidades y descarga de audio soportada.</p>
+							</section>
+							<section>
+								<i class="bi bi-twitter fa-4x" style="color:skyblue;!important"></i>
+								<h3>Twitter</h3>
+								<p>Permite la descarga de videos en la mejor calidad posible.</p>
+							</section>
+						</div>
+						<div class="features-row">
+							<section>
+								<i class="bi bi-facebook fa-4x" style="color:blue;!important"></i>
+								<h3>Facebook</h3>
+								<p>Videos de calidad HD.</p>
+							</section>
+							<section>
+								<i class="bi bi-tiktok fa-4x" style="color:black;!important"></i>
+								<h3>TikTok</h3>
+								<p>Descarga tus video favoritos sin marca de agua.</p>
+							</section>
+						</div>
+					</section>
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{{ url_for('static',filename = 'images/informacion_576x256.jpg')}}" alt="" /></span>
+								<h3>Información</h3>
+								<p>Información del proyecto.</p>
+								<ul class="actions special">
+									<li><a href="{{ url_for( 'informacion' )}}" class="button alt">Mas información</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{{ url_for('static',filename = 'images/desarrollo_576x256.jpg')}}" alt="" /></span>
+								<h3>Desarrollo</h3>
+								<p>Breve resumen de tecnologias utilizadas.</p>
+								<ul class="actions special">
+									<li><a href="{{ url_for( 'desarrollo' )}}" class="button alt">Mas información</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<li>Desarrollado como proyecto final para CS50X</li>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static',filename = 'js/jquery.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/browser.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/util.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/main.js')}}"></script>
+	</body>
+</html>

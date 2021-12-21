@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Downloader GO - Información</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static',filename = 'css/main.css')}}" />
+		<link rel="icon" href="{{ url_for('static',filename = 'icon.png')}}">
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="{{ url_for('index')}}">Downloader GO</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('index')}}">Home</a></li>
+							<li><a href="{{ url_for('descargar')}}">Descargar</a></li>
+							<li><a href="{{ url_for('history') }}">Historial</a></li>
+							<li><a href="{{ url_for('contacto')}}">Contactanos</a></li>
+							<li><a href="{{ url_for('logout')}}" class="button">Salir</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container medium">
+					<header>
+						<h2>Información</h2>
+					</header>
+					<div class="box">
+                        <h3>
+                            Esta aplicacion web es el resultado del proyecto final para el curso CS50X.
+                        </h3>
+                        <br>
+                        <h4><strong>Integrantes:</strong>
+                        <div class="row">
+                            <div class="col">
+                                Diego Enrique Oviedo Llanes<br>
+                                <a target="_blank" href="https://github.com/diegooviedo3004">Github</a>
+                            </div>
+                            <div class="col">
+                                Kevin Alexander Vargas Guadamuz <br>
+                                <a target="_blank" href="https://github.com/kevinAlexanderG30">Github</a>
+                            </div>
+                        </div>
+                            </h4>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<li>Desarrollado como proyecto final para CS50X</li>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static',filename = 'js/jquery.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/jquery.dropotron.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/browser.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/util.js')}}"></script>
+			<script src="{{ url_for('static',filename = 'js/main.js')}}"></script>
+
+	</body>
+</html>
